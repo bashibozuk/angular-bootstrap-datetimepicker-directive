@@ -1,0 +1,21 @@
+{
+  "name": "angular-datetimepicker",
+  "description": "angular date-time picker based on https://eonasdan.github.io/bootstrap-datetimepicker/",
+  "main": "index.html",
+  "authors": [
+    "Vasil Atanasov"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "date",
+    "time",
+    "date-time",
+    "datetimepicker"
+  ],
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37"
+  }
+}
