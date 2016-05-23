@@ -6,8 +6,4 @@ angular.module('demo', ['bsDateimepicker'])
         $scope.data = {
             datetime: '2014-05-22 13:30'
         }
-
-        $scope.$on('dt.changed', function(event, data) {
-            $scope.data.datetime = data.value;
-        })
     });
