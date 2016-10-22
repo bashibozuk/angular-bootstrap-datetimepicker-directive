@@ -6,6 +6,7 @@ angular.module('bsDateimepicker', [])
         'use strict';
 
         return {
+            require: '^ngModel',
             scope: {
                 datetime: '=ngModel'
             },
@@ -24,6 +25,7 @@ angular.module('bsDateimepicker', [])
                     var oldDate = e.oldDate ? e.oldDate.format(options.format) : null;
                     if (newDate != oldDate) {
                         scope.datetime = newDate;
+                        controller.$setViewValue(newDate);
                     }
                 }).on('$destroy', function() {
                     $element.off('dp.hide');
